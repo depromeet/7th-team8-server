@@ -1,0 +1,69 @@
+# common
+logging:
+  level:
+    org.hibernate.SQL: INFO
+    org.hibernate.type.descriptor.sql: TRACE
+
+---
+
+# local
+spring:
+  profiles:
+    active: local
+    include:
+      - local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: nonoplan-admin
+    password: noplan123!@#
+    initialization-mode: always
+    hikari:
+      maximum-pool-size: 1
+  jpa:
+    hibernate:
+      ddl-auto: create
+      use-new-id-generator-mappings: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+  cloud:
+    gcp:
+      sql:
+        instance-connection-name: nono-plan:asia-northeast2:dev-nono-plan
+        database-name: nonoplan
+
+---
+
+# develop
+spring:
+  profiles: develop
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: nonoplan-admin
+    password: noplan123!@#
+    initialization-mode: always
+    hikari:
+      maximum-pool-size: 1
+    jpa:
+      hibernate:
+        ddl-auto: none
+        use-new-id-generator-mappings: false
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+          show_sql: true
+          format_sql: true
+          use_sql_comments: true
+    cloud:
+      gcp:
+        sql:
+          instance-connection-name: nono-plan:asia-northeast2:dev-nono-plan
+          database-name: nonoplan
+---
+
+# release
+spring:
+  profiles: release
