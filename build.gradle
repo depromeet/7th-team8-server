@@ -24,7 +24,6 @@ subprojects {
 	apply plugin: "io.franzbecker.gradle-lombok"
 
 	group = 'com.nonoplan'
-	version = '0.0.1'
 	sourceCompatibility = '11'
 
 	repositories {
@@ -91,6 +90,9 @@ project(':core') {
 }
 
 project(':batch') {
+	bootJar {
+		archiveFileName = "${project.hasProperty('profile')}-app.jar"
+	}
 
 	sourceSets {
 		main {
