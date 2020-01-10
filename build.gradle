@@ -47,30 +47,18 @@ subprojects {
 		useJUnitPlatform()
 	}
 
-//	task initSourceFolders {
-//		sourceSets*.java.srcDirs*.each {
-//			if (!it.exists()) {
-//				it.mkdirs()
-//			}
-//		}
-//
-//		sourceSets*.resources.srcDirs*.each {
-//			if (!it.exists()) {
-//				it.mkdirs()
-//			}
-//		}
-//	}
+	bootJar {
+		archiveFileName = "app.jar"
+	}
 }
 
 project(':core') {
-	version = "1.0.0"
-
 	bootJar {
 		enabled = false
 	}
 
 	jar {
-		archivesBaseName = "core"
+		archivesBaseName = "nonoplan-core"
 		enabled = true
 	}
 
@@ -90,10 +78,6 @@ project(':core') {
 }
 
 project(':batch') {
-	bootJar {
-		archiveFileName = "${project.hasProperty('profile')}-app.jar"
-	}
-
 	sourceSets {
 		main {
 			resources {
