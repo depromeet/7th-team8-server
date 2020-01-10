@@ -7,4 +7,3 @@ rootProject.name = 'nono-plan'
 include 'core'
 include 'batch'
 include 'api'
-
