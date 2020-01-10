@@ -24,7 +24,7 @@ subprojects {
 	apply plugin: "io.franzbecker.gradle-lombok"
 
 	group = 'com.nonoplan'
-	version = '0.0.1-SNAPSHOT'
+	version = '0.0.1'
 	sourceCompatibility = '11'
 
 	repositories {
