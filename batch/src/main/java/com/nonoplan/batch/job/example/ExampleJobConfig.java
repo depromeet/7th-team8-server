@@ -24,13 +24,14 @@ public class ExampleJobConfig {
 
     @Bean
     public Job exampleJob() {
-        return jobBuilderFactory.get("exampleTasklet")
+        return jobBuilderFactory.get("exampleJob") // exampleJob 이란 이름의 Batch Job 생성
                 .start(exampleStep())
                 .build();
     }
 
+    @Bean
     public Step exampleStep() {
-        return stepBuilderFactory.get("exampleTasklet")
+        return stepBuilderFactory.get("exampleStep") // exampleStep 이란 이름의 Batch Step 생성
                 .tasklet(exampleTasklet)
                 .build();
     }
