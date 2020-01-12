@@ -1,4 +1,4 @@
-package com.nonoplan.core;
+package com.nonoplan.core.example;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

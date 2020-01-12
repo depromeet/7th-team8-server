@@ -1,7 +1,7 @@
 package com.nonoplan.batch.job.example;
 
-import com.nonoplan.core.Example;
-import com.nonoplan.core.ExampleRepository;
+import com.nonoplan.core.example.Example;
+import com.nonoplan.core.example.ExampleRepository;
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.tasklet.Tasklet;
@@ -21,6 +21,7 @@ public class ExampleTasklet implements Tasklet {
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         var example = Example.builder().name("hello").build();
         exampleRepository.save(example);
+        exampleRepository.flush();
         return RepeatStatus.FINISHED;
     }
 }
