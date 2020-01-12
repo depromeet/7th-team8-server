@@ -7,7 +7,7 @@ spring:
     web-application-type: NONE
   batch:
     job:
-      enabled: false
+      names: NONE
 
 ---
 
