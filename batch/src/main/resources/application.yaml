@@ -2,6 +2,14 @@ spring:
   profiles:
     include:
       - core
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: NONE
+  batch:
+    job:
+      enabled: true
+    initialize-schema: never
+
 
 ---
 
@@ -9,6 +17,9 @@ spring:
 spring:
   profiles:
     active: local
+  batch:
+    job:
+      enabled: false
 
 ---
 
