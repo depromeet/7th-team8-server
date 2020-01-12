@@ -33,6 +33,7 @@ public class ExampleJobConfig {
     public Step exampleStep() {
         return stepBuilderFactory.get("exampleStep") // exampleStep 이란 이름의 Batch Step 생성
                 .tasklet(exampleTasklet)
+                .allowStartIfComplete(true) // 항상 재시작하게 하는 설
                 .build();
     }
 }
