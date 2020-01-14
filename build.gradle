@@ -93,7 +93,7 @@ project(':batch') {
 		implementation project(':core')
 		implementation 'org.springframework.boot:spring-boot-starter-batch'
 		implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
-		compile group: 'com.google.guava', name: 'guava', version: '28.2-jre'
+		implementation 'com.google.guava:guava:28.2-jre'
 		testImplementation 'org.springframework.batch:spring-batch-test'
 	}
 }
