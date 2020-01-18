@@ -1,6 +1,0 @@
-steps:
-  - name: 'gradle'
-    args: ['bootJar', '--stacktrace']
- # - name: 'asia.gcr.io/cloud-builders/docker'
- #   args: ['build', '--tag=asia.gcr.io/$PROJECT_ID/api/${BRANCH_NAME}-${SHORT_SHA}', '.']
-#images: ['asia.gcr.io/$PROJECT_ID/api/${BRANCH_NAME}-${SHORT_SHA}']
