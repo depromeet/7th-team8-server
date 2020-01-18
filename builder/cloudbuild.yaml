@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/gradle'
-    args: ['bootJar', '-stacktrace']
+    args: ['bootJar', '--stacktrace']
     dir: 'api/'
  # - name: 'asia.gcr.io/cloud-builders/docker'
  #   args: ['build', '--tag=asia.gcr.io/$PROJECT_ID/api/${BRANCH_NAME}-${SHORT_SHA}', '.']
