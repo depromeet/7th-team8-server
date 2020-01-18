@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    include:
+      - core
+
+---
+
+# local
+spring:
+  profiles:
+    active: local
+
+---
+
+# develop
+spring:
+  profiles: develop
+
+---
+
+# release
+spring:
+  profiles: release
