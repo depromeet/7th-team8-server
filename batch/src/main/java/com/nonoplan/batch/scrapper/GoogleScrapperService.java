@@ -32,7 +32,7 @@ public class GoogleScrapperService implements ScrapperInterface {
         webDriver.get("https://www.google.com");
         wait.until(WebDriverUtils::waitPageLoading);
 
-        WebElement input = WebDriverUtils.findElement(webDriver, wait, By.name("q"));
+        var input = WebDriverUtils.findElement(webDriver, wait, By.name("q"));
 
         if (input == null) {
             throw new RuntimeException();
@@ -42,7 +42,7 @@ public class GoogleScrapperService implements ScrapperInterface {
         input.sendKeys(Keys.ENTER);
         wait.until(WebDriverUtils::waitPageLoading);
 
-        WebElement link = WebDriverUtils.findElement(webDriver, wait, By.xpath(X_PATH_MAP));
+        var link = WebDriverUtils.findElement(webDriver, wait, By.xpath(X_PATH_MAP));
 
         if(link == null) {
             throw new RuntimeException();
@@ -77,6 +77,7 @@ public class GoogleScrapperService implements ScrapperInterface {
                 log.info("reviewCount={}", reviewCount);
                 log.info("contact={}", contact);
 
+                // TODO: 영업 시간
                 // TODO: 인기 시간대
                 ((JavascriptExecutor) webDriver).executeScript("document.getElementsByClassName('immersive-container')[0].remove()");
             }
