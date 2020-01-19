@@ -3,12 +3,14 @@ package com.nonoplan.batch.common;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
+import java.util.function.Function;
 
 @Slf4j
 public class WebDriverUtils {
@@ -16,7 +18,7 @@ public class WebDriverUtils {
     private WebDriverUtils() {
     }
 
-    private static WebElement findElement(WebDriver driver, WebDriverWait wait, By by) {
+    public static WebElement findElement(WebDriver driver, WebDriverWait wait, By by) {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
             return driver.findElement(by);
@@ -53,5 +55,9 @@ public class WebDriverUtils {
         } else {
             return StringUtils.EMPTY;
         }
+    }
+
+    public static boolean waitPageLoading(WebDriver driver) {
+        return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
     }
 }

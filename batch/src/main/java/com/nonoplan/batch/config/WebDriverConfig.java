@@ -21,7 +21,7 @@ public class WebDriverConfig {
         System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
         var options = new ChromeOptions();
-        options.setHeadless(true);
+        //ßoptions.setHeadless(true);
 
         var driver = new ChromeDriver(options);
         driver.manage().window().fullscreen();
