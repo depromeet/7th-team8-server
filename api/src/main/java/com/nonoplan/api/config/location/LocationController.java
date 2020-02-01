@@ -16,7 +16,7 @@ import java.util.List;
 public class LocationController {
 
     @GetMapping("")
-    public ResponseEntity<Page<LocationDTO>> getLocations(@RequestParam double lat,
+    public ResponseEntity<Page<LocationDTO>> getLocation(@RequestParam double lat,
                                                           @RequestParam double lng,
                                                           @RequestParam(required = false) String keyword,
                                                           @RequestParam(required = false, defaultValue = "0") int pageNumber,
@@ -123,7 +123,19 @@ public class LocationController {
     }
 
     @PostMapping("{id}/reviews")
-    public ResponseEntity<Void> postLocationReview(ReviewDTO reviewDTO) {
+    public ResponseEntity<Void> postLocationReview(@PathVariable Long id, ReviewDTO reviewDTO) {
+
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("{id}/bookmarks")
+    public ResponseEntity<Void> postLocationBookmark(@PathVariable Long id) {
+
+        return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("{id}/bookmarks")
+    public ResponseEntity<Void> deleteLocationBookmark(@PathVariable Long id) {
 
         return ResponseEntity.ok().build();
     }
