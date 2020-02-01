@@ -11,7 +11,7 @@ import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
 @ApiIgnore
-public class CommonController implements ApplicationContextAware {
+public class GlobalController implements ApplicationContextAware {
 
     private ApplicationContext context;
 
