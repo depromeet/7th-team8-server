@@ -1,5 +1,5 @@
 package com.nonoplan.core.user;
 
-public enum Auth {
+public enum SocialType {
     KAKAO, APPLE
 }
