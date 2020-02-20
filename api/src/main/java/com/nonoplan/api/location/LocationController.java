@@ -55,7 +55,7 @@ public class LocationController {
                 .address("제주특별자치도 서귀포시 중정로 22")
                 .description("올레인들이 가장 사랑하고 아끼는 자연생태길인‘수봉로’를 만날 수 있는 올레길 7코스")
                 .category(Category.ATTRACTIONS)
-                .images(List.of("img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A", "img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A"))
+                .images(List.of("https://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A", "https://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A"))
                 .rating(4.0)
                 .latitude(130.0)
                 .longitude(210.0)
