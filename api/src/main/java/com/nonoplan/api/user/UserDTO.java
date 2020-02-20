@@ -1,4 +1,4 @@
-package com.nonoplan.api.config.user;
+package com.nonoplan.api.user;
 
 import lombok.Builder;
 import lombok.Getter;

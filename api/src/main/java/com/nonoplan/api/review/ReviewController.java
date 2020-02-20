@@ -1,13 +1,11 @@
-package com.nonoplan.api.config.review;
+package com.nonoplan.api.review;
 
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.PreUpdate;
 import java.time.LocalDateTime;
 import java.util.List;
 

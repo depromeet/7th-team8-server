@@ -1,6 +1,6 @@
-package com.nonoplan.api.config.location;
+package com.nonoplan.api.location;
 
-import com.nonoplan.api.config.review.ReviewDTO;
+import com.nonoplan.api.review.ReviewDTO;
 import com.nonoplan.core.location.Category;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

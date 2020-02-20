@@ -1,4 +1,4 @@
-package com.nonoplan.api.config.location;
+package com.nonoplan.api.location;
 
 import com.nonoplan.core.location.Category;
 import com.nonoplan.core.location.SubCategory;

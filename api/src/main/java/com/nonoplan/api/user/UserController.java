@@ -1,10 +1,7 @@
-package com.nonoplan.api.config.user;
+package com.nonoplan.api.user;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDateTime;
-import java.util.List;
 
 @RestController
 public class UserController {

@@ -1,4 +1,4 @@
-package com.nonoplan.api.config.review;
+package com.nonoplan.api.review;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
