@@ -30,8 +30,8 @@ public class LocationController {
                 .phoneNumber("064-796-1015")
                 .images(List.of("http://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2Fsearchregister_1505814184", "http://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2Fsearchregister_1505814184"))
                 .rating(4.3)
-                .latitude(100.0)
-                .longitude(200.0)
+                .latitude(10.2342)
+                .longitude(20.324)
                 .isBookmarking(false)
                 .build();
 
@@ -57,8 +57,8 @@ public class LocationController {
                 .category(Category.ATTRACTIONS)
                 .images(List.of("https://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A", "https://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F6B250958205C498F8CEFBACD1B991C1A"))
                 .rating(4.0)
-                .latitude(130.0)
-                .longitude(210.0)
+                .latitude(31.212)
+                .longitude(13.213)
                 .isBookmarking(true)
                 .build();
 
@@ -78,8 +78,8 @@ public class LocationController {
                 .phoneNumber("064-796-1015")
                 .images(List.of("http://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2Fsearchregister_1505814184", "http://img1.daumcdn.net/thumb/T680x420/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocalfiy%2Fsearchregister_1505814184"))
                 .rating(4.3)
-                .latitude(100.0)
-                .longitude(200.0)
+                .latitude(17.2343)
+                .longitude(15.82)
                 .isBookmarking(false)
                 .build();
 
